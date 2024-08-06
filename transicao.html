@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+    <style>
+
+        #div1 {
+            
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+           
+        }
+       .d2{
+        padding: 1px;
+       }
+
+       .d2:hover{
+            scale: 110%;
+            margin: 13px;
+            transition: 0.8s;
+        }
+
+        img{
+             border-radius: 5px;
+             width: 17.5vw;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/cr7150.jpg">
+                <img src="img/cr7.700.jpg" alt="Cristiano Ronaldo">
+            </picture>
+        </div>
+
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/messi150.jpg">
+                <img src="img/messi.700.jpg" alt="Lionel Messi">
+            </picture>
+        </div>
+
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/neymar150.jpg">
+                <img src="img/neymar.700.jpg" alt="">
+            </picture>
+        </div>
+
+        <div class="d2">
+            <picture>
+                <source media="(min-width: 300px)" srcset="img/neuer150.jpg">
+                <img src="img/neuer.700.jpg" alt="">
+            </picture>
+        </div>
+        <div class="d2" id="d5">
+            <picture>
+                <source media="min-width: 300px" srcset="img/Sérgio Ramos150.jpeg">
+                <img src="img/Sérgio Ramos700.jpg" alt="Sérgio Ramos"></source>
+            </picture>
+        </div>
+    </div>
+</body>
+
+</html>
